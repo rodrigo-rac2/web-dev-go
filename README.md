@@ -13,6 +13,9 @@
 Create a new module:
 `` go mod init github.com/username/repo ``
 
+Install all dependencies:
+`` go mod tidy ``
+
 Install a package:
 `` go get github.com/username/repo ``
 

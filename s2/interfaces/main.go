@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/rodrigo-rac2/web-dev-go/interfaces/animal"
+	animal2 "github.com/rodrigo-rac2/web-dev-go/s2/interfaces/animal"
 )
 
 func main() {
-	dog := animal.Dog{
+	dog := animal2.Dog{
 		Name:  "Samson",
 		Breed: "German Shepherd",
 	}
@@ -17,7 +17,7 @@ func main() {
 	// https://tour.golang.org/methods/8 for more details).
 	PrintInfo(&dog)
 
-	gorilla := animal.Gorilla{
+	gorilla := animal2.Gorilla{
 		Name:          "Jock",
 		Color:         "grey",
 		NumberOfTeeth: 38,
@@ -30,6 +30,6 @@ func main() {
 	PrintInfo(&gorilla)
 }
 
-func PrintInfo(a animal.Animal) {
+func PrintInfo(a animal2.Animal) {
 	fmt.Println("This animal says", a.Says(), "and has", a.NumberOfLegs(), "legs")
 }
